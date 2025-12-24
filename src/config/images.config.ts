@@ -1,175 +1,113 @@
 /**
- * Image Assets Configuration
- * 
- * Centralized catalog of all images for easy reference throughout the app.
+ * BRAND SETUP: Image Assets Configuration
+ * ========================================
+ * Centralized catalog of all brand images for easy reference throughout the app.
  * All paths are relative to /public directory.
+ * 
+ * CURSOR AI: This file is optional but recommended for:
+ * - Brands with multiple mascot/character images
+ * - Sites with reusable image sets
+ * - Teams needing centralized image management
+ * 
+ * For simple sites, you can just reference images directly in components.
+ * 
+ * INSTRUCTIONS:
+ * 1. Upload all brand images to /public/images/
+ * 2. Organize into logical folders (logos/, mascot/, blog/, etc.)
+ * 3. Update paths below to match your structure
+ * 4. Add usage notes to help team members pick the right image
+ * 5. Delete sections you don't need (e.g., mascot if no character)
  */
 
 export const images = {
-  // Logo
+  // Logo (Required)
   logo: {
-    src: "/images/logo.png",
-    alt: "Claims Centre Logo",
-    width: 640,
+    src: "{{LOGO_PATH}}", // e.g., "/images/logo.png"
+    alt: "{{BRAND_NAME}} Logo",
+    width: 640, // Adjust to your logo dimensions
     height: 240,
   },
   
-  // Fox Mascot - Hero Images (Main featured images)
+  // Logo variations (if you have light/dark versions)
+  logoVariations: {
+    light: {
+      src: "{{LOGO_LIGHT_PATH}}", // For dark backgrounds
+      alt: "{{BRAND_NAME}} Logo",
+      width: 640,
+      height: 240,
+    },
+    dark: {
+      src: "{{LOGO_DARK_PATH}}", // For light backgrounds
+      alt: "{{BRAND_NAME}} Logo",
+      width: 640,
+      height: 240,
+    },
+  },
+  
+  // Mascot/Character Images (Optional - delete if not using)
+  // If your brand has a character/mascot, organize by usage context
   mascot: {
     hero: {
-      refundCheck: {
-        src: "/images/mascot/fox-hero-refund-check.jpeg",
-        alt: "Friendly fox mascot holding a refund check",
+      primary: {
+        src: "{{MASCOT_HERO_PATH}}",
+        alt: "{{MASCOT_DESCRIPTION}}",
         width: 1024,
         height: 1024,
-        usage: "Homepage hero, refund success pages",
+        usage: "Homepage hero, main sections",
       },
-      calculator: {
-        src: "/images/mascot/fox-hero-calculator.jpeg",
-        alt: "Fox mascot with calculator - calculating your refund",
-        width: 1024,
-        height: 1024,
-        usage: "How it works section, calculator pages",
-      },
-      dealership: {
-        src: "/images/mascot/fox-hero-dealership.jpeg",
-        alt: "Fox mascot at car dealership with Vauxhall",
-        width: 1024,
-        height: 1024,
-        usage: "Car finance claims, dealership-related content",
-      },
-      showroom: {
-        src: "/images/mascot/fox-hero-showroom.png",
-        alt: "Fox mascot in professional car showroom",
-        width: 1024,
-        height: 1024,
-        usage: "About page, professional services section",
-      },
+      // Add more hero variations as needed
     },
     
-    // Call-to-Action Images
     cta: {
-      refundSign: {
-        src: "/images/mascot/fox-cta-refund-sign.png",
-        alt: "Fox holding REFUND sign",
+      primary: {
+        src: "{{MASCOT_CTA_PATH}}",
+        alt: "{{MASCOT_DESCRIPTION}}",
         width: 1024,
         height: 1024,
-        usage: "CTA sections, conversion points",
+        usage: "Call-to-action sections",
       },
     },
     
-    // Success/Celebration Images
     success: {
-      money: {
-        src: "/images/mascot/fox-success-money.png",
-        alt: "Excited fox celebrating with money",
+      primary: {
+        src: "{{MASCOT_SUCCESS_PATH}}",
+        alt: "{{MASCOT_DESCRIPTION}}",
         width: 1024,
         height: 1024,
-        usage: "Success pages, testimonials, results",
+        usage: "Success pages, confirmation screens",
       },
     },
-    
-    // Contextual/Activity Images
-    activities: {
-      driving: {
-        src: "/images/mascot/fox-driving.png",
-        alt: "Fox driving a car",
-        width: 1024,
-        height: 1024,
-        usage: "Car-related claims, driving context",
-      },
-    },
-    
-    // Additional Poses (for flexibility)
-    poses: {
-      pose10: {
-        src: "/images/mascot/fox-pose-10.png",
-        alt: "Fox mascot pose 10",
-        width: 1024,
-        height: 1024,
-      },
-      pose12: {
-        src: "/images/mascot/fox-pose-12.png",
-        alt: "Fox mascot pose 12",
-        width: 1024,
-        height: 1024,
-      },
-      pose42: {
-        src: "/images/mascot/fox-pose-42.png",
-        alt: "Fox mascot pose 42",
-        width: 1024,
-        height: 1024,
-      },
-      pose43: {
-        src: "/images/mascot/fox-pose-43.png",
-        alt: "Fox mascot pose 43",
-        width: 1024,
-        height: 1024,
-      },
-      pose59: {
-        src: "/images/mascot/fox-pose-59.png",
-        alt: "Fox mascot pose 59",
-        width: 1024,
-        height: 1024,
-      },
-      pose62: {
-        src: "/images/mascot/fox-pose-62.png",
-        alt: "Fox mascot pose 62",
-        width: 1024,
-        height: 1024,
-      },
-      pose63: {
-        src: "/images/mascot/fox-pose-63.png",
-        alt: "Fox mascot pose 63",
-        width: 1024,
-        height: 1024,
-      },
-      pose64: {
-        src: "/images/mascot/fox-pose-64.png",
-        alt: "Fox mascot pose 64",
-        width: 1024,
-        height: 1024,
-      },
-    },
-    
-    // Additional Design Variations
-    designs: {
-      design14: {
-        src: "/images/mascot/Untitled-design-14.png",
-        alt: "Fox mascot design variation 14",
-        width: 1024,
-        height: 1024,
-      },
-      design17: {
-        src: "/images/mascot/Untitled-design-17.png",
-        alt: "Fox mascot design variation 17",
-        width: 1024,
-        height: 1024,
-      },
-      design19: {
-        src: "/images/mascot/Untitled-design-19.png",
-        alt: "Fox mascot design variation 19",
-        width: 1024,
-        height: 1024,
-      },
-      design20: {
-        src: "/images/mascot/Untitled-design-20.png",
-        alt: "Fox mascot design variation 20",
-        width: 1024,
-        height: 1024,
-      },
-      design22: {
-        src: "/images/mascot/Untitled-design-22.png",
-        alt: "Fox mascot design variation 22",
-        width: 1024,
-        height: 1024,
-      },
-      design25: {
-        src: "/images/mascot/Untitled-design-25.png",
-        alt: "Fox mascot design variation 25",
-        width: 1024,
-        height: 1024,
-      },
+  },
+  
+  // Team Photos (Optional - for About page)
+  team: {
+    // Example structure:
+    // ceo: {
+    //   src: "/images/team/john-smith.jpg",
+    //   alt: "John Smith, CEO",
+    //   width: 400,
+    //   height: 400,
+    // },
+  },
+  
+  // Service/Feature Images (Optional)
+  features: {
+    // Example structure:
+    // service1: {
+    //   src: "/images/features/consultation.jpg",
+    //   alt: "Expert consultation service",
+    //   width: 800,
+    //   height: 600,
+    // },
+  },
+  
+  // Blog default image (fallback when blog post doesn't have specific image)
+  blog: {
+    default: {
+      src: "{{BLOG_DEFAULT_IMAGE}}", // e.g., "/images/blog/default.jpg"
+      alt: "{{BRAND_NAME}} Blog",
+      width: 1200,
+      height: 630,
     },
   },
 }
@@ -178,9 +116,9 @@ export const images = {
  * Helper function to get image props for Next.js Image component
  * 
  * @example
- * import { getImageProps } from '@/config/images.config'
+ * import { getImageProps, images } from '@/config/images.config'
  * 
- * <Image {...getImageProps(images.mascot.hero.refundCheck)} />
+ * <Image {...getImageProps(images.logo)} />
  */
 export function getImageProps(imageConfig: {
   src: string
@@ -198,22 +136,49 @@ export function getImageProps(imageConfig: {
 
 /**
  * Quick reference shortcuts for commonly used images
+ * Update these based on your most frequently used images
  */
 export const commonImages = {
-  // Most used hero image
-  defaultHero: images.mascot.hero.refundCheck,
+  // Primary hero image
+  defaultHero: images.mascot?.hero?.primary || images.logo,
   
-  // Best for CTAs
-  ctaImage: images.mascot.cta.refundSign,
+  // CTA image
+  ctaImage: images.mascot?.cta?.primary || images.logo,
   
-  // Success/results pages
-  successImage: images.mascot.success.money,
+  // Success/confirmation image
+  successImage: images.mascot?.success?.primary || images.logo,
   
-  // Professional/about section
-  professionalImage: images.mascot.hero.showroom,
-  
-  // Car-related content
-  carImage: images.mascot.hero.dealership,
+  // Default blog image
+  blogDefault: images.blog.default,
 }
 
-
+/**
+ * Image Organization Tips:
+ * ========================
+ * 
+ * Folder Structure (in /public/images/):
+ * 
+ * /images/
+ *   /logos/          - Logo variations (light, dark, icon-only)
+ *   /mascot/         - Character/mascot images (if applicable)
+ *   /team/           - Team member photos
+ *   /blog/           - Blog post featured images
+ *   /features/       - Service/feature illustrations
+ *   /og/             - Open Graph social sharing images
+ *   /icons/          - Custom icons (if not using icon library)
+ * 
+ * Naming Conventions:
+ * - Use kebab-case: "hero-image-primary.jpg"
+ * - Include size/variant in name: "logo-dark-640x240.png"
+ * - For blog posts, match slug: "post-slug-name.jpg"
+ * 
+ * Image Optimization:
+ * - Use WebP format when possible (better compression)
+ * - Provide 2x versions for retina displays
+ * - Keep file sizes under 200KB for web
+ * - Hero images: 1920x1080px max
+ * - Blog featured: 1200x630px (optimal for social sharing)
+ * - Logos: SVG preferred, or PNG with transparency
+ * 
+ * See docs/IMAGE_GUIDE.md for complete image guidelines
+ */

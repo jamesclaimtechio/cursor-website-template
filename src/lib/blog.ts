@@ -2,54 +2,42 @@
  * Blog Management Library
  * ========================
  * Handles blog post retrieval, filtering, and compliance checking
+ * 
+ * BRAND SETUP: As you create blog posts, import and register them here
+ * 
+ * CURSOR AI: When user creates a new blog post:
+ * 1. Add import at top: import { postName } from "@/content/blog/post-slug"
+ * 2. Add to allPosts array below
+ * 3. Post will automatically appear on blog listing page
  */
 
 import { BlogPost, BlogCategory } from "@/types/blog"
 
-// Import all blog posts
-// Add new posts here as you create them
-import { whatAreCarFinanceClaims } from "@/content/blog/what-are-car-finance-claims"
-import { understandingDCAs } from "@/content/blog/understanding-dcas"
-import { fcaRedressScheme2026 } from "@/content/blog/fca-redress-scheme-2026"
-import { blackHorseRefund } from "@/content/blog/black-horse-refund"
-import { closeBrothersMotorFinanceClaims } from "@/content/blog/close-brothers-motor-finance-claims"
-import { carFinanceCompensationCalculation } from "@/content/blog/car-finance-compensation-calculation"
-import { carFinanceCompensationGuide } from "@/content/blog/car-finance-compensation-guide"
-import { pcpClaims } from "@/content/blog/pcp-claims"
-import { misSoldCarFinanceClaim } from "@/content/blog/mis-sold-car-finance-claim"
-import { pcpCarFinanceClaims } from "@/content/blog/pcp-car-finance-claims"
-import { pcpClaimCheck } from "@/content/blog/pcp-claim-check"
-import { pcpCommissionClaims } from "@/content/blog/pcp-commission-claims"
-import { santanderCarFinanceClaims } from "@/content/blog/santander-car-finance-claims"
-import { howLongDoCarFinanceClaimsTake } from "@/content/blog/how-long-do-car-finance-claims-take"
-import { fcaDecember2025Update } from "@/content/blog/fca-december-2025-update"
+// ============================================================================
+// BLOG POST REGISTRY
+// ============================================================================
+// 
+// CURSOR AI: Import new blog posts here as they're created
+// 
+// Example:
+// import { yourPostName } from "@/content/blog/your-post-slug"
+// 
+// Then add to allPosts array below
 
-// TODO: Create these premium brand posts - files don't exist yet
-// import { mercedesCarFinanceClaims } from "@/content/blog/mercedes-car-finance-claims"
-// import { bmwCarFinanceClaims } from "@/content/blog/bmw-car-finance-claims"
-// import { audiCarFinanceClaims } from "@/content/blog/audi-car-finance-claims"
-// import { bmwVsMercedesVsAudiFinanceClaims } from "@/content/blog/bmw-vs-mercedes-vs-audi-finance-claims"
+// BRAND SETUP: Import your blog posts here
+// Currently empty - add your first post!
 
 const allPosts: BlogPost[] = [
-  fcaDecember2025Update,
-  howLongDoCarFinanceClaimsTake,
-  santanderCarFinanceClaims,
-  pcpCommissionClaims,
-  pcpClaimCheck,
-  pcpCarFinanceClaims,
-  misSoldCarFinanceClaim,
-  pcpClaims,
-  whatAreCarFinanceClaims,
-  understandingDCAs,
-  fcaRedressScheme2026,
-  blackHorseRefund,
-  closeBrothersMotorFinanceClaims,
-  carFinanceCompensationCalculation,
-  carFinanceCompensationGuide,
+  // BRAND SETUP: Add your blog posts to this array
+  // Example:
+  // yourFirstPost,
+  // yourSecondPost,
+  // etc.
 ]
 
 /**
  * Get all published blog posts, sorted by date (newest first)
+ * Only returns posts where compliance.verified === true
  */
 export function getAllPosts(): BlogPost[] {
   return allPosts
@@ -199,7 +187,6 @@ export function validateBlogPost(post: BlogPost): string[] {
  * Returns detailed SEO score and recommendations
  */
 export function validatePostSEO(slug: string) {
-  // Lazy import to avoid circular dependencies
   const post = allPosts.find(p => p.slug === slug)
   if (!post) return null
   
@@ -252,5 +239,25 @@ export function getSEOSummary() {
   }
 }
 
-
+/**
+ * USAGE INSTRUCTIONS:
+ * ===================
+ * 
+ * 1. Create a new blog post file in src/content/blog/
+ * 2. Import it at the top of this file
+ * 3. Add to the allPosts array
+ * 4. Post automatically appears on blog listing
+ * 
+ * Example:
+ * 
+ * // At top of file:
+ * import { myFirstPost } from "@/content/blog/my-first-post"
+ * 
+ * // In allPosts array:
+ * const allPosts: BlogPost[] = [
+ *   myFirstPost,
+ * ]
+ * 
+ * See docs/HOW_TO_ADD_BLOG_POSTS.md for complete guide
+ */
 

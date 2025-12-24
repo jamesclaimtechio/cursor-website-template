@@ -1,12 +1,14 @@
 {
-  "name": "claims-centre-website",
+  "name": "multi-brand-website-template",
   "version": "1.0.0",
+  "description": "Production-ready Next.js template for claims management companies, professional services, and similar businesses with Cursor AI-guided setup",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "setup": "node scripts/setup-brand.js"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -26,5 +28,6 @@
     "typescript": "^5.4.5"
   }
 }
+
 
 
