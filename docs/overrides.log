@@ -1,0 +1,15 @@
+# Framework Override Log
+
+This file tracks instances where rules were overridden at user request.
+
+Format:
+[TIMESTAMP] OVERRIDE: [rule-name]
+Page: [affected page]
+Reason: [user justification]
+Status: [Approved/Rejected]
+
+---
+
+
+
+

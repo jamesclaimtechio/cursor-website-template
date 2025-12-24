@@ -1,0 +1,174 @@
+# Website Compliance Guidelines (For Cursor)
+
+Rules that affect website copy, design, and user flow for MCC. Drop this in Cursor context when building.
+
+---
+
+## Golden Rule
+
+> All content must be **clear, fair and not misleading**
+> 
+
+This applies to every page, every CTA, every piece of copy.
+
+---
+
+## Required Disclosures
+
+These MUST appear on the site:
+
+- [ ]  **FCA authorisation status** and firm reference number
+- [ ]  **"We are a Claims Management Company"** — don't let users think you're a law firm
+- [ ]  **Fees** — prominently displayed before any signup/engagement
+- [ ]  **What services you actually provide** — be specific
+- [ ]  **Realistic outcomes** — no guarantees of success
+
+---
+
+## Prohibited Content
+
+Do NOT include any of these:
+
+| ❌ Don't | Why |
+| --- | --- |
+| Specific payout amounts ("average £700") | Can't substantiate individual outcomes |
+| "Lenders are refunding money" | Implies certainty that doesn't exist |
+| Pressure tactics ("Claim NOW before deadline!") | Misleading urgency |
+| "No win no fee" without asterisk + policy link | Must link to full No Win No Fee policy page |
+| Implying FCA covers unregulated services | Halo effect violation |
+| Guarantees of success | Misleading |
+
+---
+
+## Fee Transparency
+
+### Fee Cap
+
+- Maximum: 3**0% of compensation + VAT**
+- Sliding scale for higher amounts
+
+### Display Requirements
+
+- Fees disclosed **before** any contract/signup
+- Clear explanation of **when** fees become payable
+- No hidden charges
+- Cancellation terms clearly stated
+
+**Suggested placement**: Dedicated fees page + summary in signup flow before form submission.
+
+---
+
+## Motor Finance Specific Rules
+
+For MCC's motor finance claims focus:
+
+| ✅ Do | ❌ Don't |
+| --- | --- |
+| Explain what DCAs were | Claim specific payout amounts |
+| State the redress scheme launches May 2026 | Say lenders are "refunding" |
+| Explain the claims process | Use "guaranteed" or "entitled" |
+| Be clear about your fee | Imply urgency without basis |
+
+---
+
+## Consumer Duty UX Requirements
+
+### Pre-Contract (Before Signup)
+
+- [ ]  Clearly explain what service you provide
+- [ ]  Explain the fee structure
+- [ ]  Make it obvious what they're signing up for
+
+### User Journey
+
+- [ ]  No dark patterns
+- [ ]  No confusing CTAs
+- [ ]  Easy to understand next steps
+- [ ]  No buried terms
+
+### Exit
+
+- [ ]  Easy to cancel/withdraw
+- [ ]  No pressure to stay
+- [ ]  Clear contact for questions
+
+---
+
+## Copy Guidelines
+
+### Headlines
+
+```
+✅ "Were you overcharged on car finance?"
+✅ "Check if you're eligible for motor finance compensation"
+✅ "Hidden commission may mean you're owed money"
+
+❌ "Get your £700 refund NOW!"
+❌ "Lenders are paying out — claim yours!"
+❌ "Last chance to claim!"
+```
+
+### CTAs
+
+```
+✅ "Check my eligibility"
+✅ "Start my claim"
+✅ "Find out if I'm affected"
+
+❌ "Get my money back"
+❌ "Claim my refund"
+❌ "Don't miss out"
+```
+
+### Body Copy Tone
+
+- Factual, not sensational
+- Explain the problem clearly
+- Be honest about the process and timeline
+- Don't oversell outcomes
+
+---
+
+## Footer Requirements
+
+Every page footer should include:
+
+```
+[Company Name] is authorised and regulated by the Financial Conduct Authority (FRN: XXXXXX) for claims management activities.
+```
+
+Plus links to:
+
+- Terms & Conditions
+- Privacy Policy
+- Fee Structure
+- No Win No Fee Policy
+- Complaints Procedure
+
+---
+
+## Form/Signup Flow
+
+Before final submission, user must see:
+
+1. **What they're signing up for** (clear service description)
+2. **Fee structure** (% of compensation)
+3. **Checkbox confirmation** they've read terms
+4. **What happens next** (clear next steps)
+
+---
+
+## Quick Reference
+
+| Element | Requirement |
+| --- | --- |
+| FCA number | Visible on every page (footer minimum) |
+| Fees | Prominent before engagement |
+| "CMC" disclosure | Clear — not a law firm |
+| Outcomes | No guarantees, realistic language |
+| Urgency | No false pressure |
+| Exit | Easy to cancel |
+
+---
+
+*Use this as context when building any page, component, or copy for the MCC site.*
