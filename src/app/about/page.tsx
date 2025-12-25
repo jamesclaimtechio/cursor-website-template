@@ -14,127 +14,77 @@ export default function AboutPage() {
   return (
     <LegalPageLayout
       title="About Website Builder"
-      lastUpdated="December 18, 2024"
+      lastUpdated="December 24, 2025"
     >
-      <LegalSection heading="Who We Are">
+      <LegalSection heading="What is Website Builder?">
         <p>
-          Website Builder is a demonstration template showcasing a complete Next.js website solution. This About page shows how to structure company information, values, and team details.
+          Website Builder is a production-ready Next.js template designed for rapid website deployment. 
+          Whether you're building a business website, professional services site, or any other type of website, 
+          this template provides everything you need out of the box.
         </p>
         <p>
-          We are <strong>authorised and regulated by the Financial Conduct Authority (FCA)</strong> for claims management referrals (FRN: 1013195). This means we operate under strict regulatory standards designed to protect consumers and ensure they are referred to qualified legal professionals.
-        </p>
-        <p>
-          Our registered office is located at: Office 116 Regents Pavilion, Moulton Park Industrial Estate, Northampton, England, NN3 6BJ.
+          Built with modern technologies including Next.js 14, TypeScript, and Tailwind CSS, the template 
+          includes 20+ reusable components, a complete blog system, SEO optimization tools, and comprehensive documentation.
         </p>
       </LegalSection>
 
-      <LegalSection heading="What We Do">
-        <p>
-          We make the claims process simple and stress-free by connecting you with the right legal experts. Our referral services include:
-        </p>
+      <LegalSection heading="Key Features">
         <ul className="list-disc pl-6 space-y-2">
-          <li><strong>Eligibility Checks:</strong> We assess whether you have a valid claim at no cost</li>
-          <li><strong>Solicitor Matching:</strong> We refer you to specialist solicitors who are best suited to handle your claim</li>
-          <li><strong>Initial Assessment:</strong> We gather basic information to ensure your case is well-presented to our legal partners</li>
-          <li><strong>Ongoing Support:</strong> We stay in touch to ensure you're receiving excellent service from your solicitor</li>
-          <li><strong>Quality Assurance:</strong> We only work with experienced, FCA-regulated solicitors who specialize in car finance claims</li>
-        </ul>
-        <p className="mt-4 font-semibold">
-          Once referred, your solicitor will handle all aspects of your claim, including communication with lenders, gathering evidence, and pursuing compensation on your behalf.
-        </p>
-      </LegalSection>
-
-      <LegalSection heading="Why Choose Us?">
-        <div className="space-y-4">
-          <div>
-            <h4 className="font-semibold mb-2">✅ No Win, No Fee</h4>
-            <p>You only pay if your claim is successful. There are no upfront costs or hidden charges.</p>
-          </div>
-
-          <div>
-            <h4 className="font-semibold mb-2">🛡️ Transparent Service</h4>
-            <p>We're clear about what we do and don't do. Our referral service is free - you only pay the solicitor if your claim succeeds.</p>
-          </div>
-
-          <div>
-            <h4 className="font-semibold mb-2">👥 Expert Team</h4>
-            <p>Our team has extensive experience in claims management and works with specialist solicitors.</p>
-          </div>
-
-          <div>
-            <h4 className="font-semibold mb-2">🤝 Transparent Process</h4>
-            <p>We keep you informed every step of the way and explain everything in plain English.</p>
-          </div>
-
-          <div>
-            <h4 className="font-semibold mb-2">💼 Professional Service</h4>
-            <p>We handle your claim with care and professionalism, treating every case individually.</p>
-          </div>
-        </div>
-      </LegalSection>
-
-      <LegalSection heading="We Are NOT a Law Firm">
-        <p>
-          It's important to understand that My Claims Centre is <strong>not a law firm</strong> and we do not provide legal services or advice. We are a referral service authorised by the FCA to introduce clients to our panel of specialist solicitors.
-        </p>
-        <p>
-          <strong>How it works:</strong>
-        </p>
-        <ul className="list-disc pl-6 space-y-2">
-          <li>We assess your eligibility for a car finance claim</li>
-          <li>We refer you to one of our carefully selected solicitor partners</li>
-          <li>The solicitor provides all legal services and handles your claim</li>
-          <li>The solicitor charges their fees (on a no win, no fee basis)</li>
-          <li>We receive a referral fee from the solicitor (not from you)</li>
-        </ul>
-        <p className="mt-4">
-          This referral model ensures you get expert legal representation while we handle the initial assessment and matching process.
-        </p>
-      </LegalSection>
-
-      <LegalSection heading="Our Commitment to You">
-        <p>
-          We are committed to:
-        </p>
-        <ul className="list-disc pl-6 space-y-2">
-          <li>Acting in your best interests at all times</li>
-          <li>Being clear and transparent about our fees and process</li>
-          <li>Keeping you regularly informed about your claim's progress</li>
-          <li>Handling your personal information securely and in accordance with data protection laws</li>
-          <li>Treating you fairly and with respect</li>
-          <li>Resolving any complaints quickly and fairly</li>
+          <li><strong>Component Library:</strong> 20+ pre-built sections including Hero, Features, CTA, FAQ, and more</li>
+          <li><strong>Blog System:</strong> Complete blog with auto-generated table of contents and SEO optimization</li>
+          <li><strong>SEO Engine:</strong> Built-in keyword research framework and content validation</li>
+          <li><strong>Cursor AI Guidance:</strong> Smart prompts and documentation optimized for AI-assisted development</li>
+          <li><strong>Responsive Design:</strong> Mobile-first approach that works on all devices</li>
+          <li><strong>Type Safety:</strong> Full TypeScript implementation for better developer experience</li>
         </ul>
       </LegalSection>
 
-      <LegalSection heading="Regulatory Information">
+      <LegalSection heading="Who Is This For?">
+        <p>
+          This template is perfect for:
+        </p>
+        <ul className="list-disc pl-6 space-y-2">
+          <li>Businesses needing a professional website quickly</li>
+          <li>Agencies building sites for multiple clients</li>
+          <li>Startups wanting to launch fast</li>
+          <li>Developers seeking a solid foundation</li>
+          <li>Non-technical users with Cursor AI assistance</li>
+        </ul>
+      </LegalSection>
+
+      <LegalSection heading="Technology Stack">
         <div className="bg-gray-50 p-6 rounded-lg space-y-2">
           <p>
-            <strong>Trading Name:</strong> My Claims Centre
+            <strong>Framework:</strong> Next.js 14 (App Router)
           </p>
           <p>
-            <strong>Legal Entity:</strong> SOLVO SOLUTIONS LTD
+            <strong>Language:</strong> TypeScript 5+
           </p>
           <p>
-            <strong>Company Number:</strong> 14760023
+            <strong>Styling:</strong> Tailwind CSS 3.4
           </p>
           <p>
-            <strong>Registered Address:</strong> Office 116 Regents Pavilion, Moulton Park Industrial Estate, Northampton, England, NN3 6BJ
+            <strong>UI Icons:</strong> Lucide React
           </p>
           <p>
-            <strong>Regulated By:</strong> Financial Conduct Authority (FCA)
-          </p>
-          <p>
-            <strong>FCA Firm Reference Number:</strong> 1013195
-          </p>
-          <p>
-            <strong>Authorisation:</strong> Claims Management Referrals
+            <strong>Deployment:</strong> Vercel, Railway, or any Node.js host
           </p>
         </div>
-        <p className="mt-4 text-sm text-gray-600">
-          You can verify our FCA authorisation on the FCA Register at{" "}
-          <a href="https://register.fca.org.uk/s/firm?id=0014G00002gfqUoQAI" target="_blank" rel="noopener noreferrer" className="text-[#4f46e5] hover:underline">
-            register.fca.org.uk
-          </a>
+      </LegalSection>
+
+      <LegalSection heading="Open Source & Customization">
+        <p>
+          This template is designed to be fully customizable. You have complete control over:
+        </p>
+        <ul className="list-disc pl-6 space-y-2">
+          <li>Colors, fonts, and design tokens</li>
+          <li>Content and page structure</li>
+          <li>Components and sections</li>
+          <li>Navigation and site structure</li>
+          <li>SEO and metadata</li>
+        </ul>
+        <p className="mt-4">
+          All code is well-documented and includes Cursor AI guidance to help you customize every aspect.
         </p>
       </LegalSection>
 
@@ -144,14 +94,12 @@ export default function AboutPage() {
           Get in Touch
         </h3>
         <p className="text-gray-700 mb-4">
-          Have questions about who we are or what we do? We're here to help.
+          Have questions about the template or need help getting started?
         </p>
         <p className="text-gray-700">
-          Email: <a href="mailto:info@myclaimscentre.co.uk" className="text-[#4f46e5] hover:underline">info@myclaimscentre.co.uk</a>
+          Email: <a href="mailto:hello@websitebuilder.com" className="text-[#4f46e5] hover:underline">hello@websitebuilder.com</a>
         </p>
       </div>
     </LegalPageLayout>
   )
 }
-
-
