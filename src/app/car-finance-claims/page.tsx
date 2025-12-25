@@ -12,45 +12,38 @@
 
 import { Metadata } from "next"
 import { Hero } from "@/components/sections/hero"
-import { Disclaimer } from "@/components/sections/disclaimer"
+import { Services } from "@/components/sections/services"
 import { Container } from "@/components/ui/container"
 
 export const metadata: Metadata = {
-  title: "Services | Website Builder",
-  description: "Build professional websites with our Next.js template. No coding required.",
-  keywords: ["website builder", "website template", "nextjs"],
+  title: "Features | Website Builder",
+  description: "Discover all the features included in the Website Builder template. SEO optimization, blog system, compliance tools, and more.",
+  keywords: ["website features", "template features", "nextjs components"],
   openGraph: {
-    title: "Services | Website Builder",
-    description: "Build professional websites with our Next.js template.",
+    title: "Features | Website Builder",
+    description: "Discover all the features included in the Website Builder template.",
   },
 }
 
-export default function ServicePage() {
+export default function FeaturesPage() {
   return (
     <>
       {/* Hero Section */}
       <Hero />
       
-      {/* Disclaimer */}
-      <Disclaimer />
+      {/* Features Section */}
+      <Services />
       
-      {/* Main Content Section */}
-      <section className="py-16 md:py-20 bg-white">
+      {/* Additional Content Section */}
+      <section className="py-16 md:py-20 bg-gray-50">
         <Container>
-          <div className="max-w-4xl mx-auto">
-            <article className="prose prose-lg max-w-none">
-              <h2>Service Page Template</h2>
-              <p>This is an example service page. Customize this content based on your business.</p>
-              
-              <h3>How to Customize</h3>
-              <p>
-                Option 1: Edit this file directly and replace the placeholder content.<br/>
-                Option 2: Create a content file in src/content/pages/ and import it.<br/>
-                Option 3: Delete this page if not needed for your business.
-              </p>
-              
-              <p>See <code>src/content/pages/_TEMPLATE.ts</code> for content structure guidance.</p>
-            </article>
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              Everything You Need to Build Amazing Websites
+            </h2>
+            <p className="text-xl text-gray-600 mb-8">
+              From initial setup to deployment, our template includes all the tools and documentation you need.
+            </p>
           </div>
         </Container>
       </section>

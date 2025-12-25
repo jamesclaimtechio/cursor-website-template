@@ -19,37 +19,26 @@
 
 export const seoConfig = {
   // Title template - %s is replaced with page-specific title
-  // Format: "Page Title | Brand Name"
-  titleTemplate: "%s | {{BRAND_NAME}}",
+  titleTemplate: "%s | Website Builder",
   
-  // Default title (used when no specific title is set)
-  // Should include brand name and core value proposition
-  // Keep under 60 characters for optimal Google display
-  defaultTitle: "{{BRAND_NAME}} - {{VALUE_PROPOSITION}}",
-  // Example: "My Claims Centre - We make your refund stress free"
-  // Example: "Legal Services Pro - Expert Legal Help When You Need It"
+  // Default title
+  defaultTitle: "Website Builder - Build Professional Websites in Minutes",
   
   // Default meta description
-  // Used when no page-specific description is provided
-  // Keep between 150-160 characters
-  // Should summarize what you do and include a call-to-action
-  defaultDescription: "{{BRAND_DESCRIPTION}}",
-  // Example: "My Claims Centre helps you get the refunds you deserve with a simple, stress-free process. Our friendly team handles everything for you."
-  // Example: "Professional legal services for individuals and businesses. Fast, affordable, and expert guidance. Get your free consultation today."
+  defaultDescription: "Website Builder is a production-ready Next.js template for creating professional websites quickly. Includes components, blog system, SEO engine, and Cursor AI guidance.",
   
   // Open Graph settings (for social media sharing)
   openGraph: {
-    type: "website", // Keep as "website" for most sites
-    locale: "{{LOCALE}}", // e.g., "en_GB" (UK), "en_US" (US), "en_AU" (Australia)
-    siteName: "{{BRAND_NAME}}", // Your brand name (used in social shares)
-    defaultImage: "/og-image.jpg", // Path to default Open Graph image (1200x630px)
-                                    // Upload to /public/og-image.jpg before deploying
+    type: "website",
+    locale: "en_US",
+    siteName: "Website Builder",
+    defaultImage: "/og-image.jpg",
   },
   
-  // Twitter Card settings (for Twitter/X sharing)
+  // Twitter Card settings
   twitter: {
-    card: "summary_large_image", // Shows large image preview on Twitter
-    site: "{{TWITTER_HANDLE}}", // e.g., "@yourbrand" or leave empty if no Twitter
+    card: "summary_large_image",
+    site: "",
   },
 }
 

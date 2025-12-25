@@ -20,55 +20,50 @@
 
 export const siteConfig = {
   // Basic Brand Identity
-  name: "{{BRAND_NAME}}", // e.g., "My Claims Centre"
-  legalEntity: "{{COMPANY_LEGAL_NAME}}", // e.g., "SOLVO SOLUTIONS LTD"
-  companyNumber: "{{COMPANY_NUMBER}}", // e.g., "14760023"
-  tagline: "{{BRAND_TAGLINE}}", // e.g., "We make your refund stress free"
-  description: "{{BRAND_DESCRIPTION}}", // 1-2 sentence description of your service
+  name: "Website Builder", // Your brand name
+  legalEntity: "Website Builder Inc", // Your legal entity name
+  companyNumber: "12345678", // Your company registration number
+  tagline: "Build professional websites in minutes", // Your tagline
+  description: "Website Builder helps you create beautiful, functional websites without coding. Professional templates with AI-guided setup.", // 1-2 sentence description
   
-  // Regulatory Authorization (UK Claims Management Companies / Financial Services)
-  // Leave empty string "" if not FCA regulated
-  fcaNumber: "{{FCA_NUMBER}}", // e.g., "1013195" or ""
+  // Regulatory Authorization (optional - delete if not applicable)
+  // Leave empty string "" if not regulated
+  fcaNumber: "", // e.g., "1013195" for FCA, or "" if not applicable
   
   // Contact Information
-  email: "{{CONTACT_EMAIL}}", // e.g., "info@yourbrand.com"
-  phone: "{{CONTACT_PHONE}}", // e.g., "0800 123 4567" or "" if not available
-  address: "{{BUSINESS_ADDRESS}}", // Full business address for legal/footer display
+  email: "hello@websitebuilder.com", // Your contact email
+  phone: "", // Your phone or leave empty
+  address: "123 Tech Street, San Francisco, CA 94105", // Your business address
   
   // Social Media Links (optional - leave empty strings if not used)
   social: {
-    twitter: "{{TWITTER_URL}}", // e.g., "https://twitter.com/yourbrand" or ""
-    linkedin: "{{LINKEDIN_URL}}", // e.g., "https://linkedin.com/company/yourbrand" or ""
-    instagram: "{{INSTAGRAM_URL}}", // e.g., "https://instagram.com/yourbrand" or ""
-    facebook: "{{FACEBOOK_URL}}", // e.g., "https://facebook.com/yourbrand" or ""
+    twitter: "", // e.g., "https://twitter.com/yourbrand"
+    linkedin: "", // e.g., "https://linkedin.com/company/yourbrand"
+    instagram: "", // e.g., "https://instagram.com/yourbrand"
+    facebook: "", // e.g., "https://facebook.com/yourbrand"
   },
   
   // Brand Logos
   // Upload your logos to /public/images/ first, then update paths here
   logo: {
-    src: "{{LOGO_PATH}}", // e.g., "/images/logo-dark.png" - Dark logo for light backgrounds
-    alt: "{{BRAND_NAME}} Logo",
-    width: 640, // Adjust based on your logo dimensions
+    src: "/images/mascot/Black Template Logo.png", // Dark logo for light backgrounds
+    alt: "Website Builder Logo",
+    width: 640,
     height: 240,
   },
   // Light version for dark backgrounds (footer, dark mode, etc.)
   logoLight: {
-    src: "{{LOGO_LIGHT_PATH}}", // e.g., "/images/logo-light.png" - Light logo for dark backgrounds
-    alt: "{{BRAND_NAME}} Logo",
+    src: "/images/mascot/White Template Logo.png", // Light logo for dark backgrounds
+    alt: "Website Builder Logo",
     width: 640,
     height: 240,
   },
   
   // Site Navigation
-  // CURSOR AI: Ask user what pages they want in their navigation
-  // Common structures:
-  // - Claims/Services sites: Home, Services, How It Works, Blog, About, Contact
-  // - Professional services: Home, Services, Case Studies, About, Contact
-  // - Generic: Home, About, Services, Blog, Contact
   navigation: [
     { label: "Home", href: "/" },
-    { label: "{{SERVICE_NAME}}", href: "/{{service-slug}}" }, // e.g., "Car Finance Claims" → "/car-finance-claims"
-    { label: "Blog", href: "/{{service-slug}}/blog" }, // Or "/blog" for top-level
+    { label: "Features", href: "/car-finance-claims" },
+    { label: "Blog", href: "/car-finance-claims/blog" },
     { label: "How It Works", href: "/how-it-works" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },

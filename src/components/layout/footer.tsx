@@ -83,21 +83,6 @@ export function Footer() {
                   Terms & Conditions
                 </Link>
               </li>
-              <li>
-                <Link href="/fees" className="text-gray-300 hover:text-white transition-colors">
-                  Fee Structure
-                </Link>
-              </li>
-              <li>
-                <Link href="/no-win-no-fee" className="text-gray-300 hover:text-white transition-colors">
-                  No Win No Fee
-                </Link>
-              </li>
-              <li>
-                <Link href="/complaints" className="text-gray-300 hover:text-white transition-colors">
-                  Complaints
-                </Link>
-              </li>
             </ul>
           </div>
 
