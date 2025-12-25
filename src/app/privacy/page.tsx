@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import { LegalPageLayout, LegalSection } from "@/components/layout/legal-page-layout"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Claims Centre",
+  title: "Privacy Policy | Website Builder",
   description: "Our privacy policy explains how we collect, use, and protect your personal data in compliance with GDPR and UK data protection laws.",
   robots: {
     index: true,
@@ -18,7 +18,7 @@ export default function PrivacyPage() {
     >
       <LegalSection heading="Introduction">
         <p>
-          At My Claims Centre, a trading style of <strong>SOLVO SOLUTIONS LTD</strong> (Company No. 14760023) ("we", "us", or "our"), we are committed to protecting your privacy and personal data. This Privacy Policy explains how we collect, use, store, and protect your information when you use our referral services or visit our website.
+          At My Website Builder, a trading style of <strong>SOLVO SOLUTIONS LTD</strong> (Company No. 14760023) ("we", "us", or "our"), we are committed to protecting your privacy and personal data. This Privacy Policy explains how we collect, use, store, and protect your information when you use our referral services or visit our website.
         </p>
         <p>
           We are authorised and regulated by the Financial Conduct Authority (FCA) for claims management referrals (FRN: 1013195). As the data controller, we are responsible for ensuring your personal data is processed in accordance with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.
@@ -223,7 +223,7 @@ export default function PrivacyPage() {
           If you have any questions about this Privacy Policy or how we handle your personal data, please contact us:
         </p>
         <div className="bg-gray-50 p-4 rounded-lg mt-4">
-          <p className="mb-2"><strong>My Claims Centre</strong></p>
+          <p className="mb-2"><strong>My Website Builder</strong></p>
           <p className="mb-1"><strong>Data Controller:</strong> SOLVO SOLUTIONS LTD (Company No. 14760023)</p>
           <p className="mb-1"><strong>Address:</strong> Office 116 Regents Pavilion, Moulton Park Industrial Estate, Northampton, England, NN3 6BJ</p>
           <p>Email: <a href="mailto:info@myclaimscentre.co.uk" className="text-[#4f46e5] hover:underline">info@myclaimscentre.co.uk</a></p>

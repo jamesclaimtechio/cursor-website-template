@@ -4,8 +4,8 @@ import { siteConfig } from "@/config/site.config"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Contact Us | Claims Centre",
-  description: "Get in touch with Claims Centre. We're here to answer your questions about car finance claims. Open Monday-Friday, 9am-5pm.",
+  title: "Contact Us | Website Builder",
+  description: "Get in touch with Website Builder. Questions about the template? We're here to help. Contact our support team.",
   robots: {
     index: true,
     follow: true,
@@ -20,7 +20,7 @@ export default function ContactPage() {
     >
       <div className="mb-8">
         <p className="text-lg text-gray-700">
-          Have questions about making a claim or our services? We're here to help. Get in touch with our friendly team who will be happy to assist you.
+          Have questions about the template or need help getting started? We're here to help. Get in touch with our support team.
         </p>
       </div>
 

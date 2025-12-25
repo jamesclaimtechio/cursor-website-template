@@ -167,7 +167,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
             </Link>
             <ChevronRight className="w-3 h-3 md:w-4 md:h-4 flex-shrink-0" />
             <Link href="/car-finance-claims" className="hover:text-[#5d2c89] transition-colors">
-              <span className="hidden sm:inline">Car Finance Claims</span>
+              <span className="hidden sm:inline">Website Builder</span>
               <span className="sm:hidden">Claims</span>
             </Link>
             <ChevronRight className="w-3 h-3 md:w-4 md:h-4 flex-shrink-0" />

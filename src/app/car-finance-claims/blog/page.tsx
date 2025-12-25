@@ -4,10 +4,10 @@ import { BlogCard } from "@/components/blog/blog-card"
 import { getAllPosts } from "@/lib/blog"
 
 export const metadata: Metadata = {
-  title: "Car Finance Claims Blog - News & Guides | My Claims Centre",
+  title: "Website Builder Blog - News & Guides | My Claims Centre",
   description: "Stay informed about car finance claims, DCAs, FCA redress scheme updates, and consumer rights. Expert guides and news on motor finance compensation.",
   openGraph: {
-    title: "Car Finance Claims Blog - News & Guides",
+    title: "Website Builder Blog - News & Guides",
     description: "Expert guides and news on car finance claims, DCAs, and the FCA redress scheme.",
   },
 }
@@ -28,7 +28,7 @@ export default function BlogListingPage() {
             </div>
 
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Car Finance Claims
+              Website Builder
               <br />
               <span className="text-[#5d2c89]">Blog</span>
             </h1>

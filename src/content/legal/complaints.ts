@@ -5,13 +5,13 @@ export const complaintsPage: LegalPage = {
   title: "Complaints Procedure",
   lastUpdated: "December 18, 2024",
   metadata: {
-    title: "Complaints Procedure | My Claims Centre",
+    title: "Complaints Procedure | Website Builder",
     description: "How to make a complaint about our services. We are committed to resolving issues quickly and fairly in accordance with FCA requirements.",
   },
   content: `
 ## Our Commitment
 
-At My Claims Centre, we are committed to providing high-quality referral services to all our clients. However, we recognize that there may be occasions when you feel our service has not met your expectations.
+At Website Builder, we are committed to providing high-quality referral services to all our clients. However, we recognize that there may be occasions when you feel our service has not met your expectations.
 
 We take all complaints seriously and will investigate them thoroughly and fairly. This page explains how to make a complaint about our referral service and what you can expect from our complaints process.
 

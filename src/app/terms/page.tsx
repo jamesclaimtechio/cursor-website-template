@@ -3,8 +3,8 @@ import { LegalPageLayout, LegalSection } from "@/components/layout/legal-page-la
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions | Claims Centre",
-  description: "Terms and conditions for using Claims Centre's claims management services. Read about your rights, obligations, and our service agreement.",
+  title: "Terms & Conditions | Website Builder",
+  description: "Terms and conditions for using Website Builder template. Read about usage rights, obligations, and license agreement.",
   robots: {
     index: true,
     follow: true,

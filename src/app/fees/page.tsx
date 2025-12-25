@@ -3,7 +3,7 @@ import { LegalPageLayout, LegalSection } from "@/components/layout/legal-page-la
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Fee Structure | Claims Centre",
+  title: "Fee Structure | Website Builder",
   description: "Transparent fee structure for our claims management services. Success fee of up to 30% + VAT, with no upfront costs.",
   robots: {
     index: true,
@@ -20,7 +20,7 @@ export default function FeesPage() {
       <div className="mb-8 p-6 bg-blue-50 border-2 border-blue-500 rounded-lg">
         <h3 className="font-bold text-xl mb-3">Important: Our Referral Service is Free</h3>
         <p className="text-gray-700 mb-3">
-          <strong>You do not pay any fees to My Claims Centre.</strong> Our service is completely free - we assess your eligibility and refer you to specialist solicitors at no cost to you.
+          <strong>You do not pay any fees to My Website Builder.</strong> Our service is completely free - we assess your eligibility and refer you to specialist solicitors at no cost to you.
         </p>
         <p className="text-gray-700">
           The fees described on this page are charged by the <strong>solicitors we refer you to</strong>, not by us. We receive a referral fee from the solicitor, but this does not come from your compensation and does not increase the solicitor's charges.
@@ -73,16 +73,16 @@ export default function FeesPage() {
           The exact percentage will be confirmed in your Client Care Letter and Fee Agreement from your solicitor before you sign. The success fee and VAT are only deducted from compensation you actually receive.
         </p>
         <p className="mt-4 font-semibold">
-          <strong>Remember:</strong> This fee is charged by your solicitor, not by My Claims Centre. We do not receive any payment from your compensation.
+          <strong>Remember:</strong> This fee is charged by your solicitor, not by My Website Builder. We do not receive any payment from your compensation.
         </p>
       </LegalSection>
 
       <LegalSection heading="No Upfront Costs">
         <p>
-          Neither My Claims Centre nor the solicitors we refer you to charge any upfront fees. There are no costs to:
+          Neither My Website Builder nor the solicitors we refer you to charge any upfront fees. There are no costs to:
         </p>
         <ul className="list-disc pl-6 space-y-2">
-          <li>Check if you're eligible for a claim with My Claims Centre</li>
+          <li>Check if you're eligible for a claim with My Website Builder</li>
           <li>Be referred to a solicitor</li>
           <li>Have your solicitor review your case</li>
           <li>Begin the claims process with your solicitor</li>
@@ -140,7 +140,7 @@ export default function FeesPage() {
 
       <LegalSection heading="How We Get Paid (Referral Fees)">
         <p>
-          My Claims Centre receives a referral fee from the solicitor when we successfully introduce a client. This means:
+          My Website Builder receives a referral fee from the solicitor when we successfully introduce a client. This means:
         </p>
         <ul className="list-disc pl-6 space-y-2">
           <li>The fee is paid by the solicitor to us (not by you)</li>
@@ -155,7 +155,7 @@ export default function FeesPage() {
 
       <LegalSection heading="Regulatory Information">
         <p>
-          My Claims Centre is a trading style of <strong>SOLVO SOLUTIONS LTD</strong> (Company No. 14760023), authorised and regulated by the Financial Conduct Authority (FCA) for claims management referrals (FRN: 1013195).
+          My Website Builder is a trading style of <strong>SOLVO SOLUTIONS LTD</strong> (Company No. 14760023), authorised and regulated by the Financial Conduct Authority (FCA) for claims management referrals (FRN: 1013195).
         </p>
         <p className="mt-3">
           The solicitors we refer you to are also regulated by the Solicitors Regulation Authority (SRA) and must comply with FCA regulations which cap success fees at 30% plus VAT for financial claims.

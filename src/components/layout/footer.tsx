@@ -12,30 +12,36 @@ export function Footer() {
         <div className="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* About */}
           <div>
-            <Image
-              src={siteConfig.logoLight.src}
-              alt={siteConfig.logoLight.alt}
-              width={160}
-              height={60}
-              className="h-12 w-auto mb-4"
-            />
+            {siteConfig.logoLight.src.startsWith('{{') ? (
+              <div className="h-12 mb-4 flex items-center text-white font-bold text-xl">
+                {siteConfig.name}
+              </div>
+            ) : (
+              <Image
+                src={siteConfig.logoLight.src}
+                alt={siteConfig.logoLight.alt}
+                width={160}
+                height={60}
+                className="h-12 w-auto mb-4"
+              />
+            )}
             <p className="text-gray-300 text-sm">
               {siteConfig.tagline}
             </p>
           </div>
 
-          {/* Services */}
+          {/* Resources */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Services</h3>
+            <h3 className="font-bold text-lg mb-4">Resources</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/car-finance-claims" className="text-gray-300 hover:text-white transition-colors">
-                  Car Finance Claims
+                <Link href="/car-finance-claims/blog" className="text-gray-300 hover:text-white transition-colors">
+                  Blog
                 </Link>
               </li>
               <li>
-                <Link href="/car-finance-claims/blog" className="text-gray-300 hover:text-white transition-colors">
-                  Blog & Resources
+                <Link href="/how-it-works" className="text-gray-300 hover:text-white transition-colors">
+                  Documentation
                 </Link>
               </li>
             </ul>
@@ -121,9 +127,8 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 py-6 space-y-3 text-center text-sm text-gray-400">
           <p className="text-xs leading-relaxed max-w-4xl mx-auto">
-            {siteConfig.name} is a trading style of {siteConfig.legalEntity} (Company No. {siteConfig.companyNumber}), 
-            authorised and regulated by the Financial Conduct Authority for claims management referrals (FRN: {siteConfig.fcaNumber}). 
-            We are not a law firm. We refer clients to our panel of specialist solicitors who provide legal services and handle claims.
+            {siteConfig.name} - A production-ready website template for professional businesses. 
+            Customize this footer text in src/components/layout/footer.tsx to match your business type and regulatory requirements.
           </p>
           <p className="text-xs text-gray-500">
             Registered office: {siteConfig.address}

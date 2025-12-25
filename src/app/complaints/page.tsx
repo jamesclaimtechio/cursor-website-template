@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import { LegalPageLayout, LegalSection } from "@/components/layout/legal-page-layout"
 
 export const metadata: Metadata = {
-  title: "Complaints Procedure | Claims Centre",
+  title: "Complaints Procedure | Website Builder",
   description: "How to make a complaint about our services. We are committed to resolving issues quickly and fairly in accordance with FCA requirements.",
   robots: {
     index: true,
@@ -18,7 +18,7 @@ export default function ComplaintsPage() {
     >
       <LegalSection heading="Our Commitment">
         <p>
-          At My Claims Centre, we are committed to providing high-quality referral services to all our clients. However, we recognize that there may be occasions when you feel our service has not met your expectations.
+          At My Website Builder, we are committed to providing high-quality referral services to all our clients. However, we recognize that there may be occasions when you feel our service has not met your expectations.
         </p>
         <p>
           We take all complaints seriously and will investigate them thoroughly and fairly. This page explains how to make a complaint about our referral service and what you can expect from our complaints process.
@@ -186,7 +186,7 @@ export default function ComplaintsPage() {
 
       <LegalSection heading="Regulatory Information">
         <p>
-          My Claims Centre is a trading style of <strong>SOLVO SOLUTIONS LTD</strong> (Company No. 14760023), authorised and regulated by the Financial Conduct Authority (FCA) for claims management referrals (FRN: 1013195). Our complaints procedure complies with FCA requirements set out in the Dispute Resolution: Complaints (DISP) sourcebook.
+          My Website Builder is a trading style of <strong>SOLVO SOLUTIONS LTD</strong> (Company No. 14760023), authorised and regulated by the Financial Conduct Authority (FCA) for claims management referrals (FRN: 1013195). Our complaints procedure complies with FCA requirements set out in the Dispute Resolution: Complaints (DISP) sourcebook.
         </p>
         <p className="mt-3">
           Our registered office is: Office 116 Regents Pavilion, Moulton Park Industrial Estate, Northampton, England, NN3 6BJ.

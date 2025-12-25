@@ -3,6 +3,15 @@ import { Button } from "@/components/ui/button"
 import { Container } from "@/components/ui/container"
 import { Check, ChevronRight } from "lucide-react"
 
+/**
+ * TEMPLATE DEMO: Hero Component
+ * ==============================
+ * This demo showcases "Website Builder" - a fictional service
+ * 
+ * BRAND SETUP: Replace this content with your actual service
+ * Or pass props to make it reusable
+ */
+
 export function Hero() {
   return (
     <section className="relative py-24 md:py-32 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
@@ -32,27 +41,27 @@ export function Hero() {
       
       <Container className="relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          {/* Badge - Removed unverified "Average claim" stat */}
+          {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white border border-gray-200 px-4 py-2 rounded-full shadow-sm">
-            <span className="text-sm font-medium text-gray-700">Free Eligibility Check</span>
+            <span className="text-sm font-medium text-gray-700">AI-Powered Template</span>
           </div>
           
-          {/* Headline */}
+          {/* Headline - DEMO CONTENT: Website Builder */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-gray-900">
-            Car finance claims
+            Build websites
             <br />
-            made <span className="text-[#5d2c89]">simple</span>
+            without <span className="text-[#5d2c89]">coding</span>
           </h1>
           
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-            Mis-sold car finance? Hidden commissions? Check if you could claim compensation. No win, no fee.
+            Professional websites in minutes with our AI-powered template system. Perfect for businesses, startups, and agencies.
           </p>
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Button size="lg" className="text-lg px-10 py-6 shadow-lg">
-              Check Your Claim Free
+              Get Started Free
               <ChevronRight className="ml-2 w-5 h-5" />
             </Button>
             
@@ -61,29 +70,29 @@ export function Hero() {
               size="lg"
               className="text-lg px-10 py-6"
             >
-              How it works
+              View Demo
             </Button>
           </div>
 
-          {/* Trust badges - Removed unverified claims stat */}
+          {/* Trust badges */}
           <div className="flex flex-wrap gap-6 justify-center pt-8 text-gray-600">
             <div className="flex items-center gap-2">
               <div className="w-5 h-5 rounded-full bg-[#5d2c89] flex items-center justify-center">
                 <Check className="w-3 h-3 text-white" />
               </div>
-              <span className="text-sm">2-min check</span>
+              <span className="text-sm">No credit card</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-5 h-5 rounded-full bg-[#5d2c89] flex items-center justify-center">
                 <Check className="w-3 h-3 text-white" />
               </div>
-              <span className="text-sm">No win, no fee</span>
+              <span className="text-sm">Setup in 10 min</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-5 h-5 rounded-full bg-[#5d2c89] flex items-center justify-center">
                 <Check className="w-3 h-3 text-white" />
               </div>
-              <span className="text-sm">Expert solicitor partners</span>
+              <span className="text-sm">Cursor AI included</span>
             </div>
           </div>
         </div>
@@ -92,4 +101,20 @@ export function Hero() {
   )
 }
 
-
+/**
+ * BRAND SETUP:
+ * ============
+ * This component currently has demo content for "Website Builder"
+ * 
+ * To customize:
+ * 1. Replace headline, subheadline, and trust badges
+ * 2. Update CTA button text and links
+ * 3. Or make this component accept props for full reusability
+ * 
+ * Example with props:
+ * <Hero 
+ *   headline="Your Headline"
+ *   subheadline="Your subheadline"
+ *   cta={{ label: "Get Started", href: "/signup" }}
+ * />
+ */

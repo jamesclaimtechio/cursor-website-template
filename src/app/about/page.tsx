@@ -2,8 +2,8 @@ import { Metadata } from "next"
 import { LegalPageLayout, LegalSection } from "@/components/layout/legal-page-layout"
 
 export const metadata: Metadata = {
-  title: "About Us | Claims Centre",
-  description: "Learn about Claims Centre - your trusted partner for car finance claims. We're a Claims Management Company authorised by the FCA.",
+  title: "About Us | Website Builder",
+  description: "Learn about Website Builder - a production-ready Next.js template for professional businesses. Built with Cursor AI guidance.",
   robots: {
     index: true,
     follow: true,
@@ -13,12 +13,12 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <LegalPageLayout
-      title="About Claims Centre"
+      title="About Website Builder"
       lastUpdated="December 18, 2024"
     >
       <LegalSection heading="Who We Are">
         <p>
-          My Claims Centre is a trading style of <strong>SOLVO SOLUTIONS LTD</strong> (Company No. 14760023). We are dedicated to helping consumers recover compensation they are entitled to by connecting them with expert solicitors who specialize in car finance claims.
+          Website Builder is a demonstration template showcasing a complete Next.js website solution. This About page shows how to structure company information, values, and team details.
         </p>
         <p>
           We are <strong>authorised and regulated by the Financial Conduct Authority (FCA)</strong> for claims management referrals (FRN: 1013195). This means we operate under strict regulatory standards designed to protect consumers and ensure they are referred to qualified legal professionals.

@@ -4,29 +4,37 @@ import { Container } from "@/components/ui/container"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
 
+/**
+ * TEMPLATE DEMO: FAQ Component
+ * ============================
+ * Shows demo FAQ content for "Website Builder"
+ * 
+ * BRAND SETUP: Replace with your actual FAQs
+ */
+
 export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0)
 
   const faqs = [
     {
-      question: "How much does it cost?",
-      answer: "Nothing upfront. We only charge a fee if your claim is successful (typically 25% + VAT of any compensation received).",
+      question: "How quickly can I launch my website?",
+      answer: "Most users have a fully functional website running within 2-4 hours. Setup takes 10-15 minutes, then add your content and deploy!",
     },
     {
-      question: "How long does it take?",
-      answer: "Typical claims take 8-12 weeks to process, though complex cases may take longer depending on the lender's response.",
+      question: "Do I need coding knowledge?",
+      answer: "No! The template is designed for non-technical users. Cursor AI guides you through setup, and all components are ready to use.",
     },
     {
-      question: "What if my claim is unsuccessful?",
-      answer: "You pay nothing. It's completely risk-free on a no win, no fee basis.",
+      question: "Can I customize the design?",
+      answer: "Absolutely. Change colors, fonts, and layouts through simple config files. The design system makes it easy to match your brand.",
     },
     {
-      question: "Do I need proof?",
-      answer: "Not initially. We'll help you gather evidence and build your case from the information you provide.",
+      question: "What's included in the template?",
+      answer: "20+ reusable components, blog system, SEO engine, compliance validation, comprehensive documentation, and Cursor AI guidance throughout.",
     },
     {
-      question: "Can I claim for old agreements?",
-      answer: "Yes, you may be able to claim for finance agreements from the past 6 years, subject to eligibility.",
+      question: "Is this suitable for my industry?",
+      answer: "Yes! The template works for claims management, legal services, consulting, agencies, and any professional service business.",
     },
   ]
 
@@ -46,7 +54,7 @@ export function FAQ() {
               <span className="text-[#5d2c89]">answered</span>
             </h2>
             <p className="text-lg text-gray-600">
-              Everything you need to know about car finance claims
+              Everything you need to know about this template
             </p>
           </div>
 
@@ -60,16 +68,16 @@ export function FAQ() {
                   className="w-full px-6 py-5 text-left flex justify-between items-center group"
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 >
-                  <span className="font-bold text-gray-900 text-lg pr-8 group-hover:text-[#5d2c89] transition-colors">
+                  <span className="text-lg font-semibold text-gray-900 pr-4 group-hover:text-[#5d2c89] transition-colors">
                     {faq.question}
                   </span>
-                  <div className={`flex-shrink-0 w-8 h-8 rounded-lg bg-[#5d2c89]/10 flex items-center justify-center text-[#5d2c89] text-xl transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`}>
+                  <span className="text-2xl text-gray-400 group-hover:text-[#5d2c89] transition-colors flex-shrink-0">
                     {openIndex === index ? "−" : "+"}
-                  </div>
+                  </span>
                 </button>
                 
                 {openIndex === index && (
-                  <div className="px-6 py-5 bg-gray-50 border-t border-gray-200">
+                  <div className="px-6 pb-5">
                     <p className="text-gray-600 leading-relaxed">
                       {faq.answer}
                     </p>
@@ -79,11 +87,9 @@ export function FAQ() {
             ))}
           </div>
 
-          <div className="text-center mt-12 p-8 bg-white rounded-xl border border-gray-200 shadow-sm">
-            <p className="text-lg text-gray-600 mb-4">
-              Still have questions? We're here to help!
-            </p>
-            <Button variant="outline" size="lg">
+          <div className="mt-12 text-center">
+            <p className="text-gray-600 mb-4">Still have questions? We're here to help!</p>
+            <Button variant="outline">
               Contact Us
             </Button>
           </div>
@@ -93,4 +99,13 @@ export function FAQ() {
   )
 }
 
-
+/**
+ * BRAND SETUP:
+ * ============
+ * Current demo FAQs are about Website Builder template
+ * 
+ * To customize:
+ * 1. Replace the faqs array with your questions
+ * 2. Update the section title/description
+ * 3. Or pass FAQs as props for full reusability
+ */

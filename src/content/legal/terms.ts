@@ -5,13 +5,13 @@ export const termsPage: LegalPage = {
   title: "Terms & Conditions",
   lastUpdated: "December 18, 2024",
   metadata: {
-    title: "Terms & Conditions | My Claims Centre",
-    description: "Terms and conditions for using My Claims Centre's referral services. Read about your rights, obligations, and our service agreement.",
+    title: "Terms & Conditions | Website Builder",
+    description: "Terms and conditions for using Website Builder's referral services. Read about your rights, obligations, and our service agreement.",
   },
   content: `
 ## 1. Introduction
 
-These Terms and Conditions ("Terms") govern the relationship between you ("Client", "you", or "your") and My Claims Centre, a trading style of **SOLVO SOLUTIONS LTD** (Company No. 14760023) ("we", "us", or "our") regarding the provision of referral services to connect you with specialist solicitors.
+These Terms and Conditions ("Terms") govern the relationship between you ("Client", "you", or "your") and Website Builder, a trading style of **Website Builder Inc** (Company No. 14760023) ("we", "us", or "our") regarding the provision of referral services to connect you with specialist solicitors.
 
 By engaging our services, you agree to be bound by these Terms. Please read them carefully before proceeding.
 
@@ -56,7 +56,7 @@ Once referred, your solicitor will:
 
 ### Formation of Contract
 
-A contract between you and My Claims Centre is formed when:
+A contract between you and Website Builder is formed when:
 
 1. You complete and submit our claim eligibility form
 2. We assess your eligibility and accept your case
@@ -96,9 +96,9 @@ We will:
 
 ## 6. Fees and Payment
 
-### No Fees to My Claims Centre
+### No Fees to Website Builder
 
-**You do not pay any fees to My Claims Centre.** Our referral service is completely free to you. We receive a referral fee from the solicitor we introduce you to - this does not come from your compensation.
+**You do not pay any fees to Website Builder.** Our referral service is completely free to you. We receive a referral fee from the solicitor we introduce you to - this does not come from your compensation.
 
 ### Solicitor Fees
 
@@ -132,7 +132,7 @@ While we will refer you to qualified solicitors, outcomes depend on various fact
 
 ### Your Right to Cancel
 
-You may terminate your relationship with us at any time. There are no cancellation fees from My Claims Centre as our service is free.
+You may terminate your relationship with us at any time. There are no cancellation fees from Website Builder as our service is free.
 
 If you wish to cancel after being referred to a solicitor, you should contact the solicitor directly regarding their cancellation terms.
 

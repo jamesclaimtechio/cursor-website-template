@@ -5,7 +5,7 @@ export const noWinNoFeePage: LegalPage = {
   title: "No Win, No Fee Policy",
   lastUpdated: "December 18, 2024",
   metadata: {
-    title: "No Win No Fee Policy | My Claims Centre",
+    title: "No Win No Fee Policy | Website Builder",
     description: "Understand our No Win No Fee arrangement. You only pay if your claim is successful - no upfront costs or hidden charges.",
   },
   content: `

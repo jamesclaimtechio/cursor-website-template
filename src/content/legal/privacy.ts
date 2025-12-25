@@ -5,13 +5,13 @@ export const privacyPage: LegalPage = {
   title: "Privacy Policy",
   lastUpdated: "December 18, 2024",
   metadata: {
-    title: "Privacy Policy | My Claims Centre",
+    title: "Privacy Policy | Website Builder",
     description: "Our privacy policy explains how we collect, use, and protect your personal data in compliance with GDPR and UK data protection laws.",
   },
   content: `
 ## Introduction
 
-At My Claims Centre, a trading style of **SOLVO SOLUTIONS LTD** (Company No. 14760023) ("we", "us", or "our"), we are committed to protecting your privacy and personal data. This Privacy Policy explains how we collect, use, store, and protect your information when you use our referral services or visit our website.
+At Website Builder, a trading style of **Website Builder Inc** (Company No. 14760023) ("we", "us", or "our"), we are committed to protecting your privacy and personal data. This Privacy Policy explains how we collect, use, store, and protect your information when you use our referral services or visit our website.
 
 We are authorised and regulated by the Financial Conduct Authority (FCA) for claims management referrals (FRN: 1013195). As the data controller, we are responsible for ensuring your personal data is processed in accordance with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.
 
@@ -185,7 +185,7 @@ We may update this Privacy Policy from time to time to reflect changes in our pr
 If you have any questions about this Privacy Policy or how we handle your personal data, please contact us:
 
 :::contact
-title: My Claims Centre
+title: Website Builder
 email: info@myclaimscentre.co.uk
 address: Office 116 Regents Pavilion, Moulton Park Industrial Estate, Northampton, England, NN3 6BJ
 :::

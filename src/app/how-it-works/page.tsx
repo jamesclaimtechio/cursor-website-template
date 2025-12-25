@@ -1,14 +1,26 @@
+/**
+ * BRAND SETUP: How It Works Page
+ * ===============================
+ * 
+ * Explain your process to potential customers.
+ * 
+ * CURSOR AI: When user says "customize how it works":
+ * 1. Ask about their process (3-5 steps)
+ * 2. Create content or update directly below
+ * 3. Use Process component for step-by-step display
+ */
+
 import { Metadata } from "next"
 import { Container } from "@/components/ui/container"
-import { parseContent } from "@/lib/content-parser"
-import { howItWorksContent } from "@/content/pages/how-it-works-content"
+import { Process } from "@/components/sections/process"
+import { CTA } from "@/components/sections/cta"
 
 export const metadata: Metadata = {
-  title: "How It Works: Car Finance Claims Process Explained | My Claims Centre",
-  description: "Step-by-step guide to making a car finance claim. From eligibility check to receiving compensation—transparent, straightforward, no win no fee.",
+  title: "How It Works | {{BRAND_NAME}}",
+  description: "{{PROCESS_DESCRIPTION}}",
   openGraph: {
-    title: "How It Works: Car Finance Claims Process Explained",
-    description: "Understand the car finance claims process. From eligibility check to compensation—transparent and simple.",
+    title: "How It Works",
+    description: "{{PROCESS_DESCRIPTION}}",
   },
   robots: {
     index: true,
@@ -17,9 +29,6 @@ export const metadata: Metadata = {
 }
 
 export default function HowItWorksPage() {
-  // Parse the content with blog variant for clean headings
-  const contentElements = parseContent(howItWorksContent, { variant: "blog" })
-  
   return (
     <div className="bg-white">
       {/* Hero Section */}
@@ -37,30 +46,63 @@ export default function HowItWorksPage() {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              How Our Car Finance
+              How Our
               <br />
-              <span className="text-[#5d2c89]">Claims Process</span> Works
+              <span className="text-[#5d2c89]">Process</span> Works
             </h1>
             
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              No jargon, no hidden steps. Here's exactly what happens when you check your eligibility and make a claim.
+              No jargon, no hidden steps. Here's exactly what happens from start to finish.
             </p>
           </div>
         </Container>
       </section>
 
-      {/* Main Content */}
-      <section className="py-16 md:py-20">
-        <Container>
-          <div className="max-w-4xl mx-auto">
-            <article className="prose prose-lg max-w-none">
-              {contentElements}
-            </article>
-          </div>
-        </Container>
-      </section>
+      {/* Process Steps */}
+      <Process 
+        title="Simple 3-Step Process"
+        subtitle="Get started in minutes"
+        steps={[
+          {
+            title: "Step 1: Check Eligibility",
+            description: "Quick online form to see if you qualify. Takes 2 minutes.",
+          },
+          {
+            title: "Step 2: We Handle Everything",
+            description: "Our team manages your case from start to finish.",
+          },
+          {
+            title: "Step 3: Receive Your Outcome",
+            description: "Get your result. No win, no fee - you only pay if successful.",
+          },
+        ]}
+      />
+
+      {/* CTA */}
+      <CTA 
+        headline="Ready to Get Started?"
+        description="Find out if you're eligible in just 2 minutes"
+        cta={{
+          label: "Check Eligibility",
+          href: "/contact"
+        }}
+        background="primary"
+      />
     </div>
   )
 }
 
-
+/**
+ * BRAND SETUP:
+ * ============
+ * 
+ * Replace all {{PLACEHOLDERS}} with your actual process:
+ * - Describe your 3-5 step process
+ * - Use clear, simple language
+ * - Focus on benefits at each step
+ * 
+ * Or create a content file:
+ * - Copy src/content/pages/_TEMPLATE.ts
+ * - Name it how-it-works-content.ts
+ * - Import and use here
+ */

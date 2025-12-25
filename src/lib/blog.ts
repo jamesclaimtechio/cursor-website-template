@@ -24,15 +24,17 @@ import { BlogPost, BlogCategory } from "@/types/blog"
 // 
 // Then add to allPosts array below
 
-// BRAND SETUP: Import your blog posts here
-// Currently empty - add your first post!
+// TEMPLATE DEMO: Example blog posts showing template features
+import { gettingStartedWithTemplate } from "@/content/blog/getting-started-with-template"
+import { customizingYourDesign } from "@/content/blog/customizing-your-design"
+import { seoOptimizationGuide } from "@/content/blog/seo-optimization-guide"
 
 const allPosts: BlogPost[] = [
-  // BRAND SETUP: Add your blog posts to this array
-  // Example:
-  // yourFirstPost,
-  // yourSecondPost,
-  // etc.
+  gettingStartedWithTemplate,
+  customizingYourDesign,
+  seoOptimizationGuide,
+  // BRAND SETUP: Replace these example posts with your actual content
+  // Or keep them as documentation for users
 ]
 
 /**

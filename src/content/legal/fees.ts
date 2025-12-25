@@ -5,12 +5,12 @@ export const feesPage: LegalPage = {
   title: "Fee Structure",
   lastUpdated: "December 18, 2024",
   metadata: {
-    title: "Fee Structure | My Claims Centre",
+    title: "Fee Structure | Website Builder",
     description: "Our referral service is completely free. Learn about solicitor fees and our transparent pricing model.",
   },
   content: `
 :::highlight[blue] Important: Our Referral Service is Free
-**You do not pay any fees to My Claims Centre.** Our service is completely free - we assess your eligibility and refer you to specialist solicitors at no cost to you.
+**You do not pay any fees to Website Builder.** Our service is completely free - we assess your eligibility and refer you to specialist solicitors at no cost to you.
 
 The fees described on this page are charged by the **solicitors we refer you to**, not by us. We receive a referral fee from the solicitor, but this does not come from your compensation and does not increase the solicitor's charges.
 :::
@@ -35,14 +35,14 @@ If your claim is successful, your solicitor will charge a success fee of **up to
 The exact percentage will be confirmed in your Client Care Letter and Fee Agreement from your solicitor before you sign.
 
 :::infobox[green]
-**Remember:** This fee is charged by your solicitor, not by My Claims Centre. We do not receive any payment from your compensation.
+**Remember:** This fee is charged by your solicitor, not by Website Builder. We do not receive any payment from your compensation.
 :::
 
 ## No Upfront Costs
 
-Neither My Claims Centre nor the solicitors we refer you to charge any upfront fees. There are no costs to:
+Neither Website Builder nor the solicitors we refer you to charge any upfront fees. There are no costs to:
 
-- Check if you're eligible for a claim with My Claims Centre
+- Check if you're eligible for a claim with Website Builder
 - Be referred to a solicitor
 - Have your solicitor review your case
 - Begin the claims process with your solicitor
@@ -86,7 +86,7 @@ If you have any questions about fees at any stage of the process, please don't h
 
 ## How We Get Paid (Referral Fees)
 
-My Claims Centre receives a referral fee from the solicitor when we successfully introduce a client. This means:
+Website Builder receives a referral fee from the solicitor when we successfully introduce a client. This means:
 
 - The fee is paid by the solicitor to us (not by you)
 - It does not come from your compensation

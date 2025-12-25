@@ -16,14 +16,20 @@ export function Header() {
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <Image
-              src={siteConfig.logo.src}
-              alt={siteConfig.logo.alt}
-              width={160}
-              height={60}
-              priority
-              className="h-12 w-auto"
-            />
+            {siteConfig.logo.src.startsWith('{{') ? (
+              <div className="h-12 px-4 flex items-center bg-gray-100 rounded text-gray-600 font-medium">
+                {siteConfig.name}
+              </div>
+            ) : (
+              <Image
+                src={siteConfig.logo.src}
+                alt={siteConfig.logo.alt}
+                width={160}
+                height={60}
+                priority
+                className="h-12 w-auto"
+              />
+            )}
           </Link>
 
           {/* Desktop Navigation */}
